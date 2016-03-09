@@ -19,6 +19,8 @@ APIs
 -----
 
 #### POST /v1/auth/login
+** request args **
+서버의 상태를 반환받기 위해서 먼저 권한을 요청한다
 name | type | description
 ---- | ---- | -----------
 key | string | settings.php에서 설정한 security
@@ -26,17 +28,20 @@ key | string | settings.php에서 설정한 security
 
 
 #### DELETE /v1/auth/logout
+** request args **
 name | type | description
 ---- | ---- | -----------
 
 
 
 #### GET /v1/proc
+서버의 상태를 반환받는다
+** request args **
 name | type | description
 ---- | ---- | -----------
 
 
-#### response
+** response **
 name | type | description
 ---- | ---- | -----------
 cpu | float | cpu의 사용량을 % ( percentage )로 반환한다
