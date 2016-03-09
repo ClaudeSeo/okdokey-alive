@@ -36,12 +36,15 @@ name | type | description
 
 #### GET /v1/proc
 서버의 상태를 반환받는다
+
 ** request args **
+
 name | type | description
 ---- | ---- | -----------
 
 
 ** response **
+
 name | type | description
 ---- | ---- | -----------
 cpu | float | cpu의 사용량을 % ( percentage )로 반환한다
