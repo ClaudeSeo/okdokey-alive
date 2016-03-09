@@ -4,7 +4,7 @@
 installing
 ----------
 
-composer['https://getcomposer.org/']
+[composer](https://getcomposer.org/)
 
 Configuration
 -------------
