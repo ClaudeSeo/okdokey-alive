@@ -30,6 +30,7 @@ key | string | settings.php에서 설정한 security
 
 
 #### DELETE /v1/auth/logout
+API호출을 위한 권한을 반환한다
 
 ##### request args
 
