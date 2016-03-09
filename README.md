@@ -9,7 +9,7 @@ install
 Configuration
 -------------
 
-`src/settings.php`
+`src/settings.php`에서 설정이 가능하다
 
 `security` = API에 접근할 수 있도록 권한을 요청하는 암호 키
 
