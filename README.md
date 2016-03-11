@@ -24,13 +24,12 @@ Slim(PHP), Android Project
 name | type | description
 ---- | ---- | -----------
 key | string | settings.php에서 설정한 security
-<br>
 
+<br>
 ##### DELETE /v1/auth/logout
 API호출을 위한 권한을 반환한다
 
 <br>
-
 ##### GET /v1/proc
 서버의 상태를 반환받는다
 ** response params **
