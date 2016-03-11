@@ -14,7 +14,7 @@ Slim(PHP), Android Project
 
 - `security` : API에 접근할 수 있는 암호키
 
-- `network` : 트래픽량을 감시할 이더넷 ( default p33p1 )
+- `network` : 이더넷 ( default p33p1, eth0 )
 
 ### APIs
 ##### POST /v1/auth/login
