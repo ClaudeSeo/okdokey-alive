@@ -19,22 +19,20 @@ Slim(PHP), Android Project
 ### APIs
 ##### POST /v1/auth/login
 서버의 상태를 반환받기 위해서 먼저 권한을 요청한다
-
-** request params **
+**request params**
 
 name | type | description
 ---- | ---- | -----------
 key | string | settings.php에서 설정한 security
-
 <br>
+
 ##### DELETE /v1/auth/logout
 API호출을 위한 권한을 반환한다
-
 <br>
+
 ##### GET /v1/proc
 서버의 상태를 반환받는다
-
-** response params **
+**response params**
 
 name | type | description
 --- | --- | -----------
