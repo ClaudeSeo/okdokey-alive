@@ -32,6 +32,7 @@ API호출을 위한 권한을 반환한다
 
 ##### GET /v1/proc
 서버의 상태를 반환받는다
+
 **response params**
 
 name | type | description
