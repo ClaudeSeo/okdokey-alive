@@ -19,6 +19,7 @@ Slim(PHP), Android Project
 ### APIs
 ##### POST /v1/auth/login
 서버의 상태를 반환받기 위해서 먼저 권한을 요청한다
+
 **request params**
 
 name | type | description
