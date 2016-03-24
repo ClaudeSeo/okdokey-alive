@@ -25,7 +25,6 @@ Slim(PHP), Android Project
 name | type | description
 ---- | ---- | -----------
 key | string | settings.php에서 설정한 security
-<br>
 
 **response**
 
