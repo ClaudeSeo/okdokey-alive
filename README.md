@@ -1,57 +1,44 @@
 # okdokey-alive
-서버의 상태를 실시간 모니터링할 수 있게 도와주는 서비스
+###### 실시간 내 서버의 상태를 볼 수 있게 도와주는 어플리케이션
 
-install
-----------
+Slim(PHP), Android Project
 
-[composer](https://getcomposer.org/)
+현재 내 서버의 상태가 궁금할 때 어플리케이션을 실행하면 CPU, RAM, DISK의 사용량을 계산하여 보여준다
 
-Configuration
--------------
 
-`src/settings.php`를 수정해 필요한 환경변수들을 수정할 수 있다
+### 설치
+[Slim](http://www.slimframework.com/) 설치 후 웹서버와 연동
 
-`security` = API에 접근할 수 있도록 권한을 요청하는 암호 키
+### Configuration
+`src/settings.php`를 수정해 필요한 환경 변수들을 수정할 수 있다
 
-`network` = 서버의 네트워크 이름 ( default : p33p1, eth )
+- `security` : API에 접근할 수 있는 암호키
 
-APIs
------
+- `network` : 이더넷 ( default p33p1, eth0 )
 
-#### POST /v1/auth/login
+### APIs
+##### POST /v1/auth/login
 서버의 상태를 반환받기 위해서 먼저 권한을 요청한다
 
-##### request args
+**request params**
 
 name | type | description
 ---- | ---- | -----------
 key | string | settings.php에서 설정한 security
+<br>
 
-
-
-#### DELETE /v1/auth/logout
+##### DELETE /v1/auth/logout
 API호출을 위한 권한을 반환한다
 
-##### request args
+<br>
 
-name | type | description
----- | ---- | -----------
-
-
-
-#### GET /v1/proc
+##### GET /v1/proc
 서버의 상태를 반환받는다
 
-##### request args
+**response**
 
 name | type | description
----- | ---- | -----------
-
-
-##### response 
-
-name | type | description
----- | ---- | -----------
+--- | --- | -----------
 cpu | float | cpu의 사용량을 % ( percentage )로 반환한다
 uptime | float | 서버가 켜져있던 시간을 초단위로 반환한다
 load | float | 서버 로드율을 1분, 5분, 15분 단위로 반환한다
